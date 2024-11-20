@@ -1,0 +1,166 @@
+@import "./normalize.css";
+@import "./css/fonts.css";
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #ff7979;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-position: center;
+  background-repeat: repeat;
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  column-gap: 4.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.1rem;
+  width: 100%;
+  max-width: 525px;
+
+  .content__title {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+
+  .content__description {
+    width: 490px;
+  }
+}
+
+.form-content {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+
+.form-suggest {
+  background-color: #5e54a4;
+  width: 540px;
+  height: 60px;
+  box-shadow: 0px 8px 0px 0px #00000025;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.73;
+    text-align: center;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 0px 0px #00000025;
+}
+
+.form-content__input {
+  width: 100%;
+  max-width: 460px;
+  height: 56px;
+  border-radius: 0.5rem;
+  border: 1px solid #5e54a4;
+  padding: 1.5rem 3.2rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    cursor: text;
+  }
+}
+
+.form-content__input:focus::placeholder {
+  color: #3d3b48;
+}
+
+.form-content__input::placeholder {
+  font-weight: 600;
+  font-size: 1.4rem;
+  list-style: 1.8;
+}
+
+button {
+  background-color: #38cc8b;
+  height: 56px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px -4px 0px 0px #00000017 inset;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.73;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #77e2b3;
+  }
+}
+
+.terms-services {
+  color: #bab7d4;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 2.36;
+  text-align: center;
+  margin-top: -12px;
+
+  a {
+    color: #ff7979;
+  }
+}
